@@ -7,6 +7,12 @@ use Livewire\Component;
 class Counter extends Component
 {
     public int $count = 3;
+    public int $number;
+
+    public function changeCount(int $number)
+    {
+        $this->count = $number;
+    }
 
     public function plusCount()
     {
@@ -25,4 +31,6 @@ class Counter extends Component
     {
         return view('livewire.counter');
     }
+
+
 }
