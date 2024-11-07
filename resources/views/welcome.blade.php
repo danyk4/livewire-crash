@@ -7,6 +7,18 @@
         <title>Starting with Livewire</title>
     </head>
     <body>
-        <livewire:bird-form />
+        {{--        <div>--}}
+        {{--            Send Event:--}}
+        {{--            <livewire:send-event/>--}}
+        {{--        </div>--}}
+        {{--        <div>--}}
+        {{--            Receive Event:--}}
+        {{--            <livewire:receive-event/>--}}
+        {{--        </div>--}}
+
+        {{--        <livewire:lazy lazy/>--}}
+        {{--        Some additional info after component was loaded.--}}
+
+        <livewire:bird-form/>
     </body>
 </html>

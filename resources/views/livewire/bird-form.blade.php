@@ -19,8 +19,8 @@
 
     <div>
         @foreach($entries as $entry)
-            <div>
-                {{ $entry->bird_count }} bird(s) - {{ $entry->notes }}
+            <div wire:key="{{ $entry->id }}" wire:transition>
+                <p>{{ $entry->bird_count }} bird(s) - {{ $entry->notes }} <span><button wire:click="delete({{ $entry->id }})">Delete</button></span></p>
             </div>
         @endforeach
     </div>
